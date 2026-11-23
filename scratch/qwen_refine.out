@@ -1,0 +1,127 @@
+The repository /home/moritz/Documents/personal/models/qwen3-0.6b-diffusion-mdlm contains custom code which must be executed to correctly load the model. You can inspect the repository content at /home/moritz/Documents/personal/models/qwen3-0.6b-diffusion-mdlm .
+ You can inspect the repository content at https://hf.co//home/moritz/Documents/personal/models/qwen3-0.6b-diffusion-mdlm.
+You can avoid this prompt in future by passing the argument `trust_remote_code=True`.
+
+Do you wish to run the custom code? [y/N] [transformers] You are using a model of type `a2d-qwen3` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+/home/moritz/.venvs/hobby/lib/python3.13/site-packages/transformers/configuration_utils.py:723: FutureWarning: `rope_scaling` is deprecated and will be removed in a future version. Set `rope_parameters` instead, with `rope_type` and `rope_theta` included.
+  warnings.warn(
+missing: [] unexpected: []
+/home/moritz/.venvs/hobby/lib/python3.13/site-packages/transformers/modeling_attn_mask_utils.py:202: FutureWarning: The attention mask API under `transformers.modeling_attn_mask_utils` (`AttentionMaskConverter`) is deprecated and will be removed in Transformers v5.10. Please use the new API in `transformers.masking_utils`.
+  warnings.warn(DEPRECATION_MESSAGE, FutureWarning)
+PROMPT: Write a Python function that reverses a string.
+--- fill ---
+Here is a simple Python function that reverses a string:
+
+```python
+def reverse_string(s):
+    return s[::-1]
+```
+
+This function uses Python's `[::-1]` to reverse the string.
+
+--- refine 1 ---
+Here is a simple Python function that reverses a string:
+
+```python
+def reverse_string(s):
+    reversed_string = =[::-[::-]
+    reversed reversed_string = s[::-1]
+    return reversed_string
+```
+
+--- refine 2 ---
+Here is a simple Python function that reverses a string:
+
+```python
+def reverse_string(string):
+    reversed_string = input_string[::-1]
+    return reversed_string
+```
+
+This function return reversed_string
+```
+
+--- refine 3 ---
+Here is a simple Python function that reverses a string:
+
+```python
+def reverse(input_string):
+    reversed_string = input_string[::-1]
+    return reversed_string
+```
+
+============================================================
+PROMPT: Write a Python function that returns the nth Fibonacci number.
+--- fill ---
+Here is a Python function that returns the nth Fibonacci number:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        a, b = 1, 1
+        for _ in range(3, n + 1):
+            a, b = b, a + b
+        return b
+```
+
+--- refine 1 ---
+Here is a Python function that returns the nth Fibonacci number:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        a, b = 1, 1
+        for _ in range(3, n + 1):
+            a, b = b, a + b
+        return b
+```
+
+--- refine 2 ---
+Here is a Python function that returns the nth Fibonacci number:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        a, b = 1, 1
+        for _ in range(3, n + 1):
+            a, b = b, a + b
+        return b
+```
+
+--- refine 3 ---
+Here is a Python function that returns the nth Fibonacci number:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        a, b = 1, 1
+        for _ in range(3, n + 1):
+            a, b = b, a + b
+        return b
+```
+
+============================================================
